@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO amélioré -->
+    <title>Victorien - Développeur Full Stack & Créateur Tech</title>
+    <meta name="description" content="Développeur Full Stack spécialisé en création de solutions numériques modernes, performantes et élégantes. Portfolio professionnel présentant mes projets et compétences techniques.">
+    <meta name="keywords" content="développeur web, full stack, portfolio, Victorien, développement web, HTML, CSS, JavaScript, PHP, Python">
+    <meta name="author" content="Victorien">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Victorien - Développeur Full Stack & Créateur Tech">
+    <meta property="og:description" content="Portfolio professionnel d'un développeur passionné par les technologies web modernes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorien.dev">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Fonts optimisées -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Scripts asynchrones -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Victorien<span class="dot">.</span></h1>
+            
+            <button class="menu-toggle" aria-label="Menu navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link active" data-page="accueil">Accueil</a></li>
+                    <li><a href="#projets" class="nav-link" data-page="projets">Projets</a></li>
+                    <li><a href="#competences" class="nav-link" data-page="competences">Compétences</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="highlight">Développeur</span> & 
+                            <span class="highlight">Créateur Tech</span>
+                        </h1>
+                        
+                        <div class="typing-container" aria-live="polite">
+                            <p class="typing-intro">Je suis</p>
+                            <div class="typing-wrapper">
+                                <span class="typing"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                        
+                        <p class="hero-description">
+                            Je conçois et développe des solutions numériques modernes, performantes 
+                            et centrées sur l'expérience utilisateur.
+                        </p>
+                        
+                        <div class="hero-cta">
+                            <a href="#projets" class="btn btn-primary">
+                                <i class="fas fa-briefcase"></i> Voir mes projets
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> Me contacter
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="image-frame">
+                            <img 
+                                src="images/profile.jpg" 
+                                alt="Victorien - Développeur Full Stack" 
+                                width="400"
+                                height="400"
+                                loading="eager"
+                                onerror="this.src='https://via.placeholder.com/400x400/0a0f1f/00aaff?text=Victorien'"
+                            >
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="image-badge">
+                            <span class="badge-text">Disponible</span>
+                            <div class="pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#projets" class="scroll-down" aria-label="Défiler vers le bas">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mes Projets</h2>
+                    <p class="section-subtitle">Découvrez mes réalisations les plus significatives</p>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="project-status completed">Terminé</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Portfolio Personnel</h3>
+                            <p>Création d'un site web responsive moderne avec animations fluides et design épuré pour présenter mes compétences et projets.</p>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/vic/portfolio" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-icon"
+                               aria-label="Voir le code source sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn-link" aria-label="Voir la démonstration">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="project-status in-progress">En cours</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Application Mobile Flutter</h3>
+                            <p>Application multiplateforme de gestion d'événements avec authentification, notifications push et synchronisation en temps réel.</p>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" 
+                               class="btn-icon disabled"
+                               aria-label="Code source non disponible">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn-link" aria-label="Voir les détails du projet">
+                                <i class="fas fa-info-circle"></i> En savoir plus
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <span class="project-status completed">Terminé</span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Plateforme Covoiturage</h3>
+                            <p>Plateforme web complète de covoiturage avec système de réservation, paiement en ligne et évaluation des conducteurs.</p>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/vic/carpooling" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-icon"
+                               aria-label="Voir le code source sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn-link" aria-label="Voir la démonstration">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mes Compétences</h2>
+                    <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i> Frontend
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="90" data-index="0">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="85" data-index="1">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="70" data-index="2">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i> Backend
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="80" data-index="3">
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP/Laravel</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="75" data-index="4">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python/Django</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="70" data-index="5">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-database"></i> Bases de données
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="85" data-index="6">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="75" data-index="7">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="65" data-index="8">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i> Outils
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="90" data-index="9">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="80" data-index="10">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-level="75" data-index="11">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Parlons de votre projet</p>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Travaillons ensemble</h3>
+                        <p class="contact-description">
+                            Vous avez un projet en tête ? Discutons-en ! Je suis ouvert aux opportunités 
+                            de collaboration, qu'il s'agisse de développement web, d'applications mobiles 
+                            ou de conseil technique.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:victorienatsou@gmail.com">victorienatsou@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Téléphone</h4>
+                                    <a href="tel:+22871165111">+228 71 16 51 11</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Localisation</h4>
+                                    <span>Togo, Lomé</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <p>Retrouvez-moi aussi sur :</p>
+                            <div class="social-icons">
+                                <a href="https://github.com/vic"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="social-icon"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/victorien-atsou"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="social-icon"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/22871165111"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="social-icon"
+                                    aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://twitter.com/victorien"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="social-icon"
+                                    aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
+                            <div class="form-error" id="subjectError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Victorien<span class="dot">.</span></h3>
+                    <p class="footer-tagline">
+                        Développeur passionné par l'innovation et la création de solutions digitales.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation rapide</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Restons connectés</h4>
+                    <p>Abonnez-vous pour recevoir mes dernières actualités.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn-icon" aria-label="S'abonner">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="currentYear"></span> Victorien ATSOU Tous droits réservés.
+                </div>
+                
+                <div class="footer-credits">
+                    <span>Développé avec passion</span>
+                    
+                </div>
+                
+                <div class="back-to-top">
+                    <a href="#accueil" class="back-top-btn" aria-label="Retour en haut">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+</body>
+</html>
