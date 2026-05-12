@@ -335,11 +335,26 @@ p {
 
 .tech-tag {
     font-size: var(--font-size-xs);
-    padding: 4px 12px;
-    background: rgba(0, 170, 255, 0.1);
-    color: var(--primary-light);
+    padding: 6px 12px;
+    background: rgba(0, 170, 255, 0.05);
+    color: var(--text-secondary);
     border-radius: 20px;
-    border: 1px solid rgba(0, 170, 255, 0.2);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all var(--transition-fast);
+}
+
+.tech-tag i {
+    font-size: 1.1rem;
+}
+
+.tech-tag:hover {
+    background: rgba(0, 170, 255, 0.15);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+    transform: translateY(-2px);
 }
 
 .project-actions {
@@ -396,6 +411,15 @@ p {
 .skill-name {
     font-weight: 600;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-name i {
+    font-size: 1.3rem;
+    min-width: 25px;
+    text-align: center;
 }
 
 .skill-percent {
@@ -798,13 +822,67 @@ section {
 }
 
 /* ==========================================================================
-   SECTION: COMPÉTENCES
+   SECTION: COMPÉTENCES (LOGO ROW)
    ========================================================================== */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.skills-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: var(--space-lg);
     margin-top: var(--space-xl);
+    padding: var(--space-md) 0;
+}
+
+.skill-logo-item {
+    font-size: 3.5rem;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.skill-logo-item i,
+.skill-logo-item img {
+    transition: all var(--transition-normal);
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.skill-logo-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+.skill-logo-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-logo-item::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.skill-logo-item:hover::after {
+    opacity: 1;
+    bottom: -5px;
 }
 
 /* ==========================================================================
