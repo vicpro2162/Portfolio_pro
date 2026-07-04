@@ -50,7 +50,7 @@ function initTypingEffect() {
         "Développeur Full-Stack",
         "Créateur de Solutions",
         "Passionné de Cybersécurité",
-        "Innovateur Digital"
+        "Designer Graphique"
     ];
     
     let wordIndex = 0;
