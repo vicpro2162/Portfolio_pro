@@ -47,9 +47,9 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const words = [
-        "Développeur Full Stack",
+        "Développeur Full-Stack",
         "Créateur de Solutions",
-        "Passionné de Tech",
+        "Passionné de Cybersécurité",
         "Innovateur Digital"
     ];
     
