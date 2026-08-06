@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "> **Full-Stack Developer** | Open-Source Enthusiast | Lifelong Learner",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicpro2162/Portfolio_pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicpro2162/Portfolio_pro/issues"
+  },
+  "homepage": "https://github.com/vicpro2162/Portfolio_pro#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
