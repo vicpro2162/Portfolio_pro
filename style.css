@@ -499,6 +499,7 @@ p {
     cursor: pointer;
     padding: var(--space-xs);
     z-index: var(--z-tooltip);
+
 }
 
 .hamburger {
@@ -767,32 +768,9 @@ section {
     100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: var(--space-xl);
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.scroll-down {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--border-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    text-decoration: none;
-    animation: bounce 2s infinite;
-    transition: all var(--transition-normal);
-}
 
-.scroll-down:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-}
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
@@ -1359,7 +1337,6 @@ section {
 @media print {
     .navbar,
     .hero-cta,
-    .scroll-indicator,
     .social-icons,
     .back-to-top,
     .toast {
