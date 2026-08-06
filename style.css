@@ -498,7 +498,7 @@ p {
     border: none;
     cursor: pointer;
     padding: var(--space-xs);
-    z-index: var(--z-dropdown);
+    z-index: var(--z-tooltip);
 }
 
 .hamburger {

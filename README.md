@@ -17,7 +17,9 @@ When I'm not coding, you'll find me 🎵 **jamming out to music**, 🏃 **poundi
 ### Frontend Magic ✨
 - **HTML5 & CSS3** - Crafting pixel-perfect layouts
 - **JavaScript** - Bringing interactivity to life
-- Modern frameworks and responsive design enthusiast
+- **ReactJS** - Building modern, component-driven interfaces
+- **Tailwind CSS** - Rapid UI development with utility-first styling
+- Modern frameworks, responsive design, and performance-first web apps
 
 ### Backend Powerhouse 🔧
 - **Laravel** - My go-to PHP framework for robust applications
@@ -57,13 +59,7 @@ Currently expanding my knowledge in:
 
 ---
 
-## 🌟 GitHub Highlights
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vicpro2162&show_icons=true&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vicpro2162&layout=compact&theme=radical&hide_border=true)
-
----
 
 ## 🎨 Creative Side
 

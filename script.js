@@ -16,7 +16,6 @@ const CONFIG = {
 const STATE = {
     isMenuOpen: false,
     currentSection: 'accueil',
-    skillsAnimated: false,
     formSubmitting: false
 };
 
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     initTypingEffect();
     initNavigation();
-    initSkillsAnimation();
     initContactForm();
     initScrollEffects();
     initCurrentYear();
@@ -192,75 +190,6 @@ function initNavigation() {
             }
         });
     });
-}
-
-/**
- * Animation des barres de compétences
- */
-function initSkillsAnimation() {
-    const skillItems = document.querySelectorAll('.skill-item');
-    
-    skillItems.forEach((item, index) => {
-        // Initialiser la largeur à 0
-        const progressBar = item.querySelector('.skill-progress');
-        if (progressBar) {
-            progressBar.style.width = '0%';
-        }
-        
-        // Ajouter un délai pour l'animation en cascade
-        item.style.animationDelay = `${index * CONFIG.animationDelay}s`;
-    });
-    
-    // Observer pour déclencher l'animation
-    const skillsSection = document.querySelector('#competences');
-    if (!skillsSection) return;
-    
-    const skillsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !STATE.skillsAnimated) {
-                animateSkills();
-            }
-        });
-    }, { threshold: 0.3 });
-    
-    skillsObserver.observe(skillsSection);
-}
-
-function animateSkills() {
-    const skillItems = document.querySelectorAll('.skill-item');
-    
-    skillItems.forEach(item => {
-        const level = item.dataset.level;
-        const progressBar = item.querySelector('.skill-progress');
-        const percentElement = item.querySelector('.skill-percent');
-        
-        if (progressBar) {
-            // Animer la barre de progression
-            setTimeout(() => {
-                progressBar.style.width = `${level}%`;
-                
-                // Animer le pourcentage
-                if (percentElement) {
-                    let currentPercent = 0;
-                    const targetPercent = parseInt(level);
-                    const increment = targetPercent / 50; // 50 étapes
-                    const duration = 1500; // 1.5 secondes
-                    const stepTime = duration / 50;
-                    
-                    const timer = setInterval(() => {
-                        currentPercent += increment;
-                        if (currentPercent >= targetPercent) {
-                            currentPercent = targetPercent;
-                            clearInterval(timer);
-                        }
-                        percentElement.textContent = `${Math.round(currentPercent)}%`;
-                    }, stepTime);
-                }
-            }, item.dataset.index * 100); // Délai en cascade
-        }
-    });
-    
-    STATE.skillsAnimated = true;
 }
 
 /**
